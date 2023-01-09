@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="seaQuizes.BirdsClass" Collapsed="true">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BirdsClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="seaQuizes.Fly" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BirdsClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="seaQuizes.Fish" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="seaQuizes.DBConnection" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="2.25" />
+        <Point X="4.75" Y="1.991" />
+        <Point X="2.883" Y="1.991" />
+        <Point X="2.883" Y="1.345" />
+        <Point X="4.25" Y="1.345" />
+        <Point X="4.25" Y="1.191" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Fish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="seaQuizes.Reptiles" Collapsed="true">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Reptiles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="seaQuizes.DBConnection" Collapsed="true">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAUAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DBConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="seaQuizes.ILandLive" Collapsed="true">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAABAA=</HashCode>
+      <FileName>ILandLive.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="seaQuizes.ISeaLive" Collapsed="true">
+    <Position X="4.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAABAAAAAAA=</HashCode>
+      <FileName>ISeaLive.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76E6BA2C-C7A0-42DA-8E96-BC0BBECD4E3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>seaQuizes</RootNamespace>
+    <AssemblyName>seaQuizes</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Birds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Birds.Designer.cs">
+      <DependentUpon>Birds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BirdsClass.cs" />
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="Fish.cs" />
+    <Compile Include="Fishfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fishfrm.Designer.cs">
+      <DependentUpon>Fishfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILandLive.cs" />
+    <Compile Include="ISeaLive.cs" />
+    <Compile Include="Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.Designer.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Questions.Designer.cs">
+      <DependentUpon>Questions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quizgameDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quizgameDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quizgameDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quizgameDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quizgameDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quizgameDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quizgameDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="quizgameDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quizgameDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RandomQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandomQuestions.Designer.cs">
+      <DependentUpon>RandomQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reptiles.cs" />
+    <Compile Include="Reptilesfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reptilesfrm.Designer.cs">
+      <DependentUpon>Reptilesfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreBoard.Designer.cs">
+      <DependentUpon>ScoreBoard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Birds.resx">
+      <DependentUpon>Birds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fishfrm.resx">
+      <DependentUpon>Fishfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load.resx">
+      <DependentUpon>Load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Questions.resx">
+      <DependentUpon>Questions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RandomQuestions.resx">
+      <DependentUpon>RandomQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reptilesfrm.resx">
+      <DependentUpon>Reptilesfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreBoard.resx">
+      <DependentUpon>ScoreBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="quizgameDataSet1.xsc">
+      <DependentUpon>quizgameDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quizgameDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quizgameDataSet1.xss">
+      <DependentUpon>quizgameDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet11.xsc">
+      <DependentUpon>quizgameDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quizgameDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quizgameDataSet11.xss">
+      <DependentUpon>quizgameDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet2.xsc">
+      <DependentUpon>quizgameDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quizgameDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quizgameDataSet2.xss">
+      <DependentUpon>quizgameDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet3.xsc">
+      <DependentUpon>quizgameDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quizgameDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quizgameDataSet3.xss">
+      <DependentUpon>quizgameDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet4.xsc">
+      <DependentUpon>quizgameDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quizgameDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quizgameDataSet4.xss">
+      <DependentUpon>quizgameDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet5.xsc">
+      <DependentUpon>quizgameDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quizgameDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quizgameDataSet5.xss">
+      <DependentUpon>quizgameDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet6.xsc">
+      <DependentUpon>quizgameDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quizgameDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quizgameDataSet6.xss">
+      <DependentUpon>quizgameDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet7.xsc">
+      <DependentUpon>quizgameDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="quizgameDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quizgameDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quizgameDataSet7.xss">
+      <DependentUpon>quizgameDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\croc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fsh1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sea.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
